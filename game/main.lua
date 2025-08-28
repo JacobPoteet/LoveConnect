@@ -1,21 +1,17 @@
 https = nil
 local overlayStats = require("lib.overlayStats")
 local runtimeLoader = require("runtime.loader")
-local eyes = require("eyes.eyes")
 
 function love.load()
   https = runtimeLoader.loadHTTPS()
-  eyes.load()
   overlayStats.load() -- Should always be called last
 end
 
 function love.draw()
-  eyes.draw()
   overlayStats.draw() -- Should always be called last
 end
 
 function love.update(dt)
-  eyes.update(dt)
   overlayStats.update(dt) -- Should always be called last
 end
 
