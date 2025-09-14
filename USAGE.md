@@ -20,7 +20,6 @@ Overview of the key files and directories in the template. The main components a
 │   ├── main.lua              main.lau with example "game" - you can delete this
 │   ├── main.template.lua     main.lua template - rename to main.lua
 │   ├── product.env           Settings shared between the game and GitHub Actions
-│   ├── eyes                  Example "game" - you can delete this
 │   ├── lib                   Libraries
 │   └── runtime               Native libraries for HTTPS support
 ├── resources                 Resources use when building the game. Icons, shared libraries, etc.
